@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Next.js Shopping Cart App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Next.js-based shopping cart application that uses the Context API for state management. It includes a homepage and a shop page with a shopping cart that updates dynamically. The application fetches product data from an external API and allows users to add, remove, and adjust quantities of items in their cart.
 
-```bash
+## Features
+
+Navigation Bar: Present on all pages, displaying the number of items in the cart.
+
+Homepage: Displays basic information or images.
+
+Shop Page:
+
+Fetches products from FakeStore API or a similar source.
+
+Displays product cards with titles, quantity selection, and an "Add to Cart" button.
+
+Users can manually enter a quantity or use increment/decrement buttons.
+
+The shopping cart updates dynamically when an order is placed.
+
+Cart Page:
+
+Shows the number of items in the cart.
+
+State Management: Uses React Context API to manage the cart state globally.
+
+Styling: Custom styles are applied for a polished user experience.
+
+## Installation & Setup
+
+Clone the repository:
+
+git clone git@github.com:AlexVNep/shoppingCcart.git
+cd shoppingCart
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the app in your browser at http://localhost:3000/.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This application fetches product data from FakeStore API
